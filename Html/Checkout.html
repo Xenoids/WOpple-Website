@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOpple - Checkout</title>
+    <link rel="stylesheet" href="../Css/Checkout.css">
+    <script defer src="../Js/jquery-3.6.2.min.js"></script>
+    <script defer src="../Js/script.js"></script>
+    <script defer src="../Js/validation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <img src="../Asset/Logo.png" class="logo" alt="WOpple.png">
+            <ul class="navigation">
+                <li class="nav-item"><a class="nav-link" href="../Html/Home.html">Home</a></li>
+                <div id="dropdown">
+                    <div id="dropdownButton">
+                        Products
+                    </div>
+                    <div id="dropdownItems">
+                        <div class="dropdownItem"><a class="text" href="../Html/Mac.html">Mac</a>
+                        </div>
+                        <div class="dropdownItem"><a class="text" href="../Html/iPhone.html">iPhone</a></div>
+                    </div>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="../Html/Services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Html/Checkout.html" target="_blank">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="card" class="ProdukTitle">
+        <p class="Title">Checkout</p>
+        <p class="SubTitle">Beli Sekarang!</p>
+    </div>
+
+    <div id="card" class="CheckoutContainer">
+        <form>
+            <div class="FormSection2">
+                <input type="checkbox" name="iPhone12Pro" id="checkboxid2">
+                <img class="iphone12box" src="../Asset/iphone12checkbox.png" alt="iphone12checkbox.png">
+                <div class="CheckoutDesc">
+                    <h2>iPhone 12 Pro</h2>
+                    <p>Rp. 16.500.000</p>
+                </div>
+            </div>
+            <div class="FormSection2">
+                <input type="checkbox" name="MacBookM2" id="checkboxid">
+                <img class="MacBookM2" src="../Asset/MacBookM2checkbox.png" alt="MacBookM2checkbox.png">
+                <div class="CheckoutDesc">
+                    <h2>MacBook Pro M2</h2>
+                    <p>Rp. 16.500.000</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="card" class="CheckoutContainer">
+        <form>
+            <div class="FormSection">
+                <label for="txtEmail">Email</label>
+                <input id="emailid" class="inputEmail" type="email">
+            </div>
+            <div class="FormSection">
+                <label for="txtNama">Nama</label>
+                <input id="namaid" class="inputNama" type="text">
+            </div>
+            <div class="FormSection">
+                <label for="txtHp">No. Hp</label>
+                <input id="Hpid" class="inputHp" type="number">
+            </div>
+            <div class="FormSection">
+                <label for="txtAlamat">Alamat</label>
+                <select class="inputAlamat">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Pekanbaru">Pekanbaru</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select>
+            </div>
+            <div class="FormSection">
+                <label for="txtKredit">Kartu Kredit</label>
+                <input id="idkredit" class="inputKredit" type="number">
+            </div>
+            <button id="idsubmit" class="submitbutton" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <h3 id="error" class="Errortxt"></h3>
+
+    <br>
+
+    <footer>
+        <div class="footer">COPYRIGHT &copy 2021-2022 WOPPLE. ALL RIGHT RESERVED.</div>
+    </footer>
+    
+</body>
+</html>
